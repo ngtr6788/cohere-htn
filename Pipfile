@@ -9,6 +9,7 @@ cohere = "*"
 annoy = "*"
 flask = "*"
 pandas = "*"
+flask-cors = "*"
 
 [dev-packages]
 
