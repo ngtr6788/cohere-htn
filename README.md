@@ -14,8 +14,11 @@ At `Hack the North 2022` @UWaterloo, Cohere AI, a sponsor of the event, challeng
 
 
 ## User Interface
+Using React.js, a demo interface was created allowing students to easoly upload their keywords and the path to the pdf.
 
 # NLP API
+The benefit of using an NLP API is that the machine learning aspect is very high level and user friengly.  split the pdf file into paragrpahs, we embbed the keywords using the API, when a user enters a keyword, it will obtain the average embedded values and try to match with the most similaor vectors found in the text. the API has several functions for us to use, there is classification, embedding, generation,
 
 # Steps Moving Forward
+An large issue we faces in the creation of this project with the parsing of the pdf. We needed the text to be parsed by paragraphs while also keeping track of the page number. The process was difficult because splitting the text by new lines ("\n") or double new lines ("\n\n") did not work on every PDF we tried. Moving forward, we would like to create a parsing tool that works on more PDF's, in other words- more generability. 
 
