@@ -8,6 +8,7 @@ requests = "*"
 cohere = "*"
 annoy = "*"
 flask = "*"
+pandas = "*"
 
 [dev-packages]
 
