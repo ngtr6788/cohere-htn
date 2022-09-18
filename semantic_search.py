@@ -81,7 +81,5 @@ def do_semantic_search(pdf_data, user_input, search_index):
     results = pd.DataFrame(data={'texts': pdf_data.iloc[similar_item_ids[0]]['text'], 'distance': similar_item_ids[1], "page_number":pdf_data.iloc[similar_item_ids[0]]['page_number'] })
     print(f"Keyword Search:'{user_input}'\nNearest neighbors: '{results}'")
 
+    return results
 
-pdf_data = extract_info("C:\\Users\\sathu\\Downloads\\Natural_Language_Processing.pdf")
-search_index = train_model_from_string_list(pdf_data)
-do_semantic_search(pdf_data, user_input, search_index)
