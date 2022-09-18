@@ -13,7 +13,7 @@ In order to search through the document, the user enters keywords related to a t
 
 ## Skills Used: 
 
-`Python`, `Cohere NLP API`, `Pandas`, `React.js`, `FLask`, `Data Dreprocessing`
+`Python`, `Cohere NLP API`, `Pandas`, `React.js`, `Flask`, `Data Dreprocessing`
 
 
 ## Background information
@@ -29,12 +29,12 @@ A large part of this project was data preprocessing. The first step was to use a
 
 
 # NLP API
-The benefit of using an NLP API is that the machine learning aspects of the project are done at a very high level and thus are user friendly. Using the annoy library, we set up a plane for word vectors. Using the API's built in functions we embedded both the users keywords and  the text from the article. Again using the API's built in function, the vectors of the keywords and those in each paragraph were compared on the annoy vector indicie. The smaller the ditance between them, the more similair the vectors are. Since we could only perform this search on one keyword at a time, we averaged the embeddings of each keyword. This average was used to compare to the embeddings of the text and ultimately determine a most likey paragraph of interest. Referencing back to the dataframe we could identify and output the page that the paragraph is on, along with the first few words so the user can identify which section it is referencing. 
+The benefit of using an NLP API is that the machine learning aspects of the project are done at a very high level, and thus are user friendly. Using the annoy library, we set up a plane for word vectors. Using the API's built in functions we embedded both the users keywords and the text from the article. Again using the API's built in function, the vectors of the keywords and those in each paragraph were compared on the annoy vector indicie. The smaller the distance between them, the more similar the vectors are. Since we could only perform this search on one keyword at a time, we averaged the embeddings of each keyword. This average was used to compare to the embeddings of the text and ultimately determine a most likey paragraph of interest. Referencing back to the dataframe, we could identify and output the page that the paragraph is on, along with the first few words so the user can identify which section it is referencing. 
 
 
 
 ## User Interface
-Using React.js and Flask, a demo interface was created allowing students to easily upload their keywords and the path to the pdf. An output screen showing the selected paragraph 
+Using React.js and Flask, a demo interface was created allowing students to easily upload their keywords and the path to the pdf. An output screen shows the selected paragraph. 
 
 
 # Steps Moving Forward
