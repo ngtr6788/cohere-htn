@@ -38,7 +38,7 @@ Using React.js and Flask, a demo interface was created allowing students to easi
 
 
 # Steps Moving Forward
-A large issue we faced in the creation of this project was the parsing of the pdf. We needed the text to be parsed by paragraphs while also keeping track of the page number. The process was difficult because splitting the text by new lines ("\n") or double new lines ("\n\n") did not work on every PDF we tried. In other words, different PDF's have different formatting. Moving forward, we would like to create a parsing tool that works on more PDF's, AKA more generability. 
+A large issue we faced in the creation of this project was the parsing of the pdf. We needed the text to be parsed by paragraphs while also keeping track of the page number. The process was difficult because splitting the text by new lines ("\n") or double new lines ("\n\n") did not work on every PDF we tried. In other words, different PDF's have different formatting. Moving forward, we would like to create a parsing tool that works on more PDF's, AKA more generality. 
 
 # References
 [1]    E. D. Liddy, “Natural Language Processing Natural Language Processing Natural Language Processing 1,” 2001, Accessed: Sep. 16, 2022. [Online]. Available: https://surface.syr.edu/istpub
