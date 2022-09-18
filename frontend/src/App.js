@@ -5,12 +5,14 @@ function App() {
   const [keyword, setKeyword] = useState("");
   const [keywordsList, setKeywordsList] = useState([]);
   const [resultsList, setResultsList] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const handleStateChange = (setState, event) => {
     setState(event.target.value);
   };
 
   const handleSubmit = () => {
+    setLoading(true);
     const bodyJSON = JSON.stringify({
       textPath: pdfPath,
       keywords: keywordsList,
@@ -24,16 +26,21 @@ function App() {
       body: bodyJSON,
     })
       .then((response) => response.json())
-      .then((resJSON) => setResultsList(resJSON.result));
+      .then((resJSON) => {
+        setResultsList(resJSON.result);
+        setLoading(false);
+      });
   };
 
   const handleKeyword = () => {
     setKeywordsList([...keywordsList, keyword]);
     setKeyword("");
+    setLoading(false);
   };
 
   const handleClear = () => {
     setKeywordsList([]);
+    setLoading(false);
   };
 
   return (
@@ -54,7 +61,10 @@ function App() {
       <button onClick={handleClear}>Clear keywords</button>
       {keywordsList && keywordsList.map((word) => <p>{word}</p>)}
       <h3>Results: </h3>
-      {resultsList &&
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        resultsList &&
         resultsList.map((result) => {
           return (
             <>
@@ -63,7 +73,8 @@ function App() {
               </p>
             </>
           );
-        })}
+        })
+      )}
     </>
   );
 }
