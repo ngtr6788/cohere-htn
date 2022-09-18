@@ -3,9 +3,7 @@ import pandas as pd
 import PyPDF2
 from annoy import AnnoyIndex
 
-key = cohere.Client("QMXjhSthJ4z6tKjLYRDPcCPYNkt2YXZRKI3flVfl")
-user_input = ["similarities and differences"]
-
+key = cohere.Client("MR4PGWBh1H88gbLzLxOG4aAT63kTE7BZdwS6XN3t")
 
 def extract_info(pdf_path):
     '''
