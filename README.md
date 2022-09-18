@@ -13,7 +13,7 @@ In order to search through the document, the user enters keywords related to a t
 
 ## Skills Used: 
 
-`Python`, `Cohere NLP API`, `Pandas`, `React.js`, `FLask`, `Data Dreprocessing`
+`Python`, `Cohere NLP API`, `Pandas`, `React.js`, `Flask`, `Data Dreprocessing`
 
 
 ## Background information
@@ -34,7 +34,7 @@ The benefit of using an NLP API is that the machine learning aspects of the proj
 
 
 ## User Interface
-Using React.js and Flask, a demo interface was created allowing students to easily upload their keywords and the path to the pdf. An output screen showing the selected paragraph 
+Using React.js and Flask, a demo interface was created allowing students to easily upload their keywords and the path to the pdf. An output screen shows the selected paragraph. 
 
 
 # Steps Moving Forward
